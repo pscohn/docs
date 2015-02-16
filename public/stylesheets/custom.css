@@ -1,6 +1,6 @@
 /* custom styles */
 
-#wys-editor {
+#wys-editor, .wys-editor {
     border: 1px solid black;
     height: 500px;
     padding: 10px;
@@ -14,3 +14,4 @@
 .dropdown-menu li:hover {
     background-color: #00FF12; 
 }
+
