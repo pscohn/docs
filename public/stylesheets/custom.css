@@ -1,0 +1,16 @@
+/* custom styles */
+
+#wys-editor {
+    border: 1px solid black;
+    height: 500px;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+#wys-editor:focus {
+    outline: none;
+}
+
+.dropdown-menu li:hover {
+    background-color: #00FF12; 
+}
