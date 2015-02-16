@@ -71,10 +71,10 @@ $(document).ready(function (){
         updateInput();
     });
 
-    var socket = io();
+//    var socket = io();
     var editor = document.getElementById('wys-editor');
     $('#wys-editor').keyup(function(e){
-        socket.emit('key', e.keyCode);
+//        socket.emit('key', e.keyCode);
 //        socket.emit('cursor', window.getSelection());
     });
 

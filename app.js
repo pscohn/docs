@@ -8,8 +8,8 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
-//var http = require('http').Server(app);
-//var io = require('socket.io')(http);
+var http = require('http').Server(app);
+var io = require('socket.io')(http);
 
 var app = express();
 
@@ -59,15 +59,15 @@ app.use(function(err, req, res, next) {
     });
 });
 
-//io.on('connection', function(socket){
-//    console.log('a user connected');
+io.on('connection', function(socket){
+    console.log('a user connected');
 //    socket.on('key', function(key){
 //        console.log('key pressed:', key, String.fromCharCode(key));
 //    });
 //    socket.on('cursor', function(cursor){
 //        console.log('cursor:', cursor);
 //    });
-//});
+});
 
 
 module.exports = app;
