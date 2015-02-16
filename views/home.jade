@@ -1,0 +1,17 @@
+extends base
+
+block content
+  br
+  br
+  br
+  div(class="container")
+    div(class="row")
+      - var id= ""
+      include ./editor.jade
+    div(class="row")
+    h2 all documents
+      ul
+      - var i = 0
+      while i < maxIndex
+        li
+          a(href="/#{i+1}")= ++i
