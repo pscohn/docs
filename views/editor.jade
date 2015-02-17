@@ -28,5 +28,5 @@ form(action="/#{id}", method="post")
           li
             a(href="#", id="wys-h6") h6 
   button(id="wys-submit", type="submit", class="btn btn-default") Save
-  div(id="wys-editor", class="col-md-12", contentEditable="true")= content
+  div(id="wys-editor", class="col-md-12", contentEditable="true") !{content}
   input(id="wys-value", name="content", type="hidden", value="")
