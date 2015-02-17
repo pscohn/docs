@@ -4,12 +4,6 @@ var redis = require('redis');
 var client = redis.createClient();
 
 
-/* GET home page. */
-//router.get('/', function(req, res, next) {
-//  res.render('index', { title: 'Express' });
-//});
-
-
 function getDocumentIDs(callback) {
     client.select('1', function() {
         client.get('max-index', function(err, data) {
